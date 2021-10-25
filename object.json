@@ -1,0 +1,95 @@
+{
+  "form": {
+    "name": "Название формы",
+    "items": [{
+      "type": "filler",
+      "attributes": {
+        "message": "Filler"
+      }
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "name": "Текст",
+        "placeholder": "placeholder",
+        "required": true,
+        "value": "",
+        "label": "Label для текста",
+        "class": "css-class",
+        "validationRules": [{
+          "type": "email"
+        }],
+        "disabled": false
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "name": "Текст",
+        "placeholder": "placeholder",
+        "required": true,
+        "value": "",
+        "label": "Label для текста",
+        "class": "css-class",
+        "disabled": false
+      }
+    },
+    {
+      "type": "checkbox",
+      "attributes": {
+        "name": "Checkbox",
+        "required": true,
+        "label": "Label для checkbox",
+        "class": "css-class",
+        "disabled": false,
+        "checked": true
+      }
+    },
+    {
+      "type": "button",
+      "attributes": {
+        "class": "css-class",
+        "text": "button"
+      }
+    },
+    {
+      "type": "select",
+      "attributes": {
+        "name": "Select",
+        "required": true,
+        "label": "Label для select",
+        "class": "css-class",
+        "disabled": false,
+        "options":[{
+          "value": "",
+          "text": "option 1",
+          "selected" : true
+        },{
+          "value": "",
+          "text": "option 2",
+          "selected" : false
+        }]
+      }
+    },{
+      "type": "radio",
+      "attributes": {
+        "name": "Имя элемента",
+        "required": true,
+        "value": "",
+        "label": "Label для элемента",
+        "class": "css-class",
+        "disabled": false,
+        "items":[{
+          "value": "",
+          "label": "text1",
+          "checked" : true
+        },{
+          "value": "",
+          "label": "text2",
+          "checked" : false
+        }]
+      }
+    }],
+    "postmessage": "Сообщение в случае успешного заполнения формы"
+  }
+}
